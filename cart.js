@@ -1,10 +1,12 @@
 const cars = require('./data/cars');
 
 module.exports = {
-  cart: null,
-  total: null,
+  cart: [],
+  total: 0,
 
   addToCart: function() {
+    this.cart.push(cars[Math.floor(Math.random()*cars.length)])
+    
 
   },
 
